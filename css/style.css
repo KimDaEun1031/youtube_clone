@@ -1,0 +1,141 @@
+/*초기화*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: inline-block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*전체 영역*/
+
+body {
+    text-align: center;
+}
+
+/*header 영역*/
+
+header {
+    position: fixed;
+    background-color: rgb(73, 170, 255);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+/*header - logo-container*/
+
+header .logo-container {
+    background-color: rgb(57, 141, 99);
+    width: 200px;
+    display: flex;
+}
+
+/*header - logo*/
+
+/*header - search-container*/
+header .search-container {
+    background-color: rgb(43, 105, 31);
+    width: 700px;
+}
+
+/*header - setting-container*/
+header .setting-container {
+    background-color: rgb(82, 57, 141);
+    width: 200px;
+}
+
+
+.line-up {
+    display: flex;
+}
+
+/*nav 영역*/
+
+nav {
+    position: fixed;
+    background-color: rgb(62, 204, 180);
+    width: 50px;
+    height: 100%;
+}
+
+/*nav - menu-container*/
+
+/*section 영역*/
+
+section {
+    background-color: rgb(100, 100, 100);
+    height: 2000px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*section - ads-section*/
+
+section .ads-section {
+    background-color: rgb(116, 39, 39);
+    height: 250px;
+    width: 100%;
+    
+}
+
+/*section - grid-section*/
+
+section .grid-section {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/*section - video-container*/
+
+section .grid-section .video-container{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 300px;
+    width: 400px;
+}
+
+
+/*footer 영역 고정이 아님*/ 
