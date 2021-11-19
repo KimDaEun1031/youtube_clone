@@ -24,11 +24,15 @@
         </div>
         <div class="search-container">
             <div class="search">
-                <!-- <input type="text" class="search-box"/>
+                <input type="text" class="search-box" placeholder="검색"/>
                 <i class="material-icons keyboard">keyboard</i>  
-                <input type="button" class="search-btn" value=""/>              -->
-            </div>                      
-        </div>
+            </div>
+                <button  type="button" class="search-btn"><i class="material-icons keyboard">search</i></button>                                                   
+            <div class="mike">
+                <i class="material-icons keyboard">mic</i>  
+            </div>                                                
+            </div>                                           
+        </div>          
         <div class="setting-container">
             <i class="material-icons">video_call</i>
             <i class="material-icons">apps</i>
@@ -40,27 +44,44 @@
         <nav>
             <div class="menu-container">
                 <div class="menu-box">
-                    <!-- <div class="home"> -->
-                        <i class="material-icons">home</i><p>홈</p>
-                    <!-- </div> -->
-                    <!-- <div class="explore"> -->
-                        <i class="material-icons">explore</i><p>탐색</p>
-                    <!-- </div> -->
-                    <!-- <div class="subscrib"> -->
-                        <i class="material-icons">subscriptions</i><p>구독</p>
-                    <!-- </div> -->
-                    <!-- <div class="video_history"> -->
-                        <i class="material-icons">video_library</i><p>보관함</p>  
-                    <!-- </div> -->
-                    <!-- <div class="history"> -->
-                        <i class="material-icons">history</i><p>시청 기록</p>
-                    <!-- </div> -->
+                    <i class="material-icons">home</i><p>홈</p>
+                    <i class="material-icons">explore</i><p>탐색</p>
+                    <i class="material-icons">subscriptions</i><p>구독</p>
+                    <i class="material-icons">video_library</i><p>보관함</p>  
+                    <i class="material-icons">history</i><p>시청 기록</p>
                 </div>   
             </div>
         </nav>
         <section>
             <div class="ads-section">
-                광고
+                <div class="main-ad-video">
+                    <video autoplay controls>
+                        <source src="./video/ads.mp4" type="video/mp4">
+                        광고 영상입니다.
+                    </video>
+                </div>
+                <div class="channel">
+                    <div class="channel-info">
+                        <div class="channel-icon">
+                            <img src="./img/channel_logo.png" alt="채널 로고">
+                        </div>
+                        <div class="ad-info">
+                            <p>엄마 고양이와 아기 고양이</p>
+                            <span>광고</span><a href="">고양이친구들</a><br>
+                            <button type="button">더 알아보기</button>
+                        </div>
+                    </div>
+                    <div class="more-video">
+                        <video >
+                            <source src="./video/ads_sample1.mp4" type="video/mp4">
+                            광고 영상입니다.
+                        </video>
+                        <video >
+                            <source src="./video/ads_sample2.mp4" type="video/mp4">
+                            광고 영상입니다.
+                        </video>
+                    </div>
+                </div>
             </div>
             <div class="grid-section">
                 <div class="video-container">비디오</div>

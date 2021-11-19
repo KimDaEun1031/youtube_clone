@@ -61,8 +61,7 @@ a:hover {
 /*전체 영역*/
 
 * {
-    text-align: center;
-   
+    text-align: center; 
 }
 
 img {
@@ -75,30 +74,32 @@ img {
 /*header 영역*/
 
 header {
-    position: fixed;
     background-color: rgb(255, 255, 255);
-    height: 80px;
+    position: fixed;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: rgb(226, 226, 226);
 }
 
 header .menu-btn {
-  background-color: rgb(255, 255, 255);
-  width: 90px;
+  width: 60px;
   height: 100%;
   
 }
 
 header .menu-btn .material-icons {
-  margin-top: 20px;
-  font-size: 36px;
+  margin-top: 17px;
+  font-size: 26px;
+  color: rgb(43, 43, 43);
 }
 
 /*header - logo-container*/
 
 header .logo-container {
-    background-color: rgb(255, 255, 255);
     width: 300px;
     display: flex;
     align-items: center;
@@ -113,41 +114,91 @@ header .logo-container .logo  {
   padding-right: 20px;
 }
 
+header .logo-container .logo img {
+  width: 92px;
+  height: 22px;
+}
+
 header .logo-container .logo .lang-kr{
-  font-size: 13px;
-  margin-top: -5px;
+  font-size: 10px;
+  margin-top: -7px;
+  color: rgb(53, 53, 53);
+  font-weight: 400;
+  
 }
 
 /*header - search-container*/
 header .search-container {
-    background-color: white;
-    border: 1px solid rgb(167, 167, 167);
-    border-radius: 3px;   
-    width: 700px;   
-    margin: 10px;
+  display: flex;
 }
 
 /*header - search*/
 
 header .search-container .search {
   display: flex;
-  
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px 0px 0px 3px ;   
+  width: 500px;   
+  height: 36px;
+
+  position: relative;
+  margin-top: 10px;
 }
 
 
 header .search-container .search .search-box {
-  width: 85%;
+  width: 850px;
   height: auto;
+  border-style: none;
+  outline: none;
+  text-align: start;
+  font-size: 16px;
+  box-shadow: inset 1px 1px 4px rgb(245, 245, 245);
 }
 
-header .search-container .search .search-btn {
-  width: 15%;
+header .search-container .search i {
+  position: absolute;
+  font-size: 22px;
+  left: 470px;
+  margin-top: 6px;
+  margin-right: 10px;
+  color: rgb(80, 80, 80);
+}
+
+header .search-container .search-btn {
+  background-color: rgb(248, 248, 248);
+  width: 65px;
+  height: 38px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 0px 3px 3px 0px ;   
+}
+
+header .search-container .search-btn i {
+  font-size: 24px;
+  margin: 5px;
+  color: rgb(80, 80, 80);
+}
+
+header .search-container .mike {
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+header .search-container .mike i {
+  margin: 8px;
+  /* font-size: 20px; */
 }
 
 /*header - setting-container*/
 header .setting-container {
     background-color: rgb(255, 255, 255);
-    width: 340px;
+    width: 280px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
@@ -155,13 +206,14 @@ header .setting-container {
 }
 
 header .setting-container img{
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 
 header .setting-container i{
-  font-size: 36px;
+  font-size: 26px;
+  color: rgb(43, 43, 43);
 }
 
 .line-up {
@@ -173,51 +225,122 @@ header .setting-container i{
 nav {
     position: fixed;
     background-color: rgb(255, 255, 255);
-    width: 90px;
+    width: 60px;
     height: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 /*nav - menu-container*/
 
 nav .menu-container {
   background-color: rgb(255, 255, 255);
-  height: 700px;
-  width: 90px;
+  height: 400px;
+  width: 60px;
 }
 
 nav .menu-container .menu-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 500px
 }
 
 nav .menu-container .menu-box i {
-
-  margin-top: 70px;
+  font-size: 24px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
+nav .menu-container .menu-box p {
+  font-size: 10px;
+}
 /*section 영역*/
 
 section {
     background-color: rgb(100, 100, 100);
     height: 2000px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 50px;
 }
 
 /*section - ads-section*/
 
 section .ads-section {
-    background-color: rgb(116, 39, 39);
+    background-color: rgb(247, 247, 247);
     height: 250px;
     width: 100%;
-    
+    display: flex;   
+    justify-content: center;
+    align-items: center;
 }
+
+section .ads-section .main-ad-video video {
+  width: 370px;
+  height: 100%;
+}
+
+section .ads-section .channel .channel-info {
+  display: flex;
+  margin-left: 10px;
+}
+
+section .ads-section .channel .channel-info .channel-icon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 19px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+section .ads-section .channel .channel-info .ad-info {
+  text-align: start;
+  margin-top: 10px;
+}
+
+section .ads-section .channel .channel-info .ad-info p {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(27, 27, 27);
+}
+
+section .ads-section .channel .channel-info .ad-info span {
+  color: white;
+  font-size: 11px;
+  background-color: rgb(247, 196, 57);
+  padding: 2px 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+section .ads-section .channel .channel-info .ad-info a {
+  font-size: 11px;
+  margin-left: 5px;
+  color: rgb(94, 94, 94);
+}
+
+section .ads-section .channel .channel-info .ad-info button {
+  width: 100px;
+  height: 35px;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: rgb(20, 97, 212);
+  color: white;
+}
+
+section .ads-section .channel .more-video video{
+  width: 150px;
+  height: 90px;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+
 
 /*section - grid-section*/
 
