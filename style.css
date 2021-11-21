@@ -83,6 +83,7 @@ header {
     border-style: none none solid none;
     border-width: 1px;
     border-color: rgb(226, 226, 226);
+    z-index: 10;
 }
 
 header .menu-btn {
@@ -228,6 +229,7 @@ nav {
     width: 60px;
     height: 100%;
     margin-top: 60px;
+    z-index: 9;
 }
 
 /*nav - menu-container*/
@@ -249,6 +251,7 @@ nav .menu-container .menu-box i {
   font-size: 24px;
   margin-top: 25px;
   margin-bottom: 10px;
+  color: rgb(43, 43, 43);
 }
 
 nav .menu-container .menu-box p {
@@ -257,11 +260,12 @@ nav .menu-container .menu-box p {
 /*section 영역*/
 
 section {
-    background-color: rgb(100, 100, 100);
-    height: 2000px;
+    background-color: rgb(247, 247, 247);
+    height: auto;
     width: 100%;
     margin-top: 60px;
     margin-left: 50px;
+    z-index: 8;
 }
 
 /*section - ads-section*/
@@ -305,6 +309,15 @@ section .ads-section .channel .channel-info .ad-info p {
   margin-top: 10px;
   margin-bottom: 10px;
   color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+}
+
+
+section .ads-section .channel .channel-info .ad-info p i {
+  font-size: 20px;
+  margin-left: 53px;
+  color: rgb(77, 77, 77);
 }
 
 section .ads-section .channel .channel-info .ad-info span {
@@ -346,7 +359,7 @@ section .ads-section .channel .more-video video{
 
 section .grid-section {
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px;
 }
@@ -354,12 +367,47 @@ section .grid-section {
 /*section - video-container*/
 
 section .grid-section .video-container{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 247, 247);
     margin-top: 10px;
-    margin-left: 5px;
-    height: 300px;
-    width: 400px;
+    margin-left: 15px;
+    height: 280px;
+    width: 300px;
 }
 
+section .grid-section .video-container .video video{
+  width: 300px;
+  height: 100%;
+  margin-bottom: 10px;
+}
 
-/*footer 영역 고정이 아님*/ 
+section .grid-section .video-container .video-channel-info .video-channel-logo img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+section .grid-section .video-container .video-channel-info {
+  display: flex;
+  margin-left: 10px;
+}
+
+section .grid-section .video-container .video-channel-info .video-info p {
+  text-align: start;
+  margin-left: 10px;
+}
+
+section .grid-section .video-container .video-channel-info .video-info .video-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  color: rgb(49, 49, 49);
+}
+
+section .grid-section .video-container .video-channel-info .video-info .video-channel-title, .video-view-count {
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
