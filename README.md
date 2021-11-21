@@ -22,7 +22,8 @@
 2. section - video 부분 제작
 > UI 제작 완료 - 약 13시간 소요
 
-#### > 결과 영상
+#### > 결과 영상 : https://relaxed-it-study.tistory.com/146
+
 
 ## CODE - 드러움 주의
 
